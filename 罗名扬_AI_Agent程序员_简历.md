@@ -1,4 +1,4 @@
-# 罗名扬 · 求职：AI Agent 程序员 / 全栈研发工程师
+# 罗名扬 · 求职目标：AI Agent 开发工程师
 
 **18428029750 | luomingyang_design@163.com | 成都 | 32岁 | 男 | 离职 | AI Agent 架构 / 桌面操作系统**  
 **GitHub: https://github.com/luoluoluo22 | B站: 我老萝卜 (UID: 324272433) | 站酷: https://www.zcool.com.cn/u/ZNTI2NzE0OTY=**
