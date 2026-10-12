@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyButtons();
   initScrollSpy();
   initEscapeKey();
+  initTimelineToggle();
 });
 
 // 1. 深色 / 浅色模式切换
@@ -205,5 +206,29 @@ function initScrollSpy() {
         });
       }
     });
+  });
+}
+
+// 9. 履历折叠与展开控制
+function initTimelineToggle() {
+  const toggleBtn = document.getElementById('toggleExpBtn');
+  const collapseWrap = document.getElementById('timelineOlderWrap');
+  if (!toggleBtn || !collapseWrap) return;
+
+  toggleBtn.addEventListener('click', () => {
+    const isOpen = collapseWrap.classList.contains('is-open');
+    if (isOpen) {
+      collapseWrap.classList.remove('is-open');
+      toggleBtn.classList.remove('is-open');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      const textSpan = toggleBtn.querySelector('.btn-text');
+      if (textSpan) textSpan.textContent = '展开更早的 5 年商业视觉设计与求学经历';
+    } else {
+      collapseWrap.classList.add('is-open');
+      toggleBtn.classList.add('is-open');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      const textSpan = toggleBtn.querySelector('.btn-text');
+      if (textSpan) textSpan.textContent = '收起更早经历';
+    }
   });
 }
