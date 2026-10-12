@@ -1803,6 +1803,134 @@ body {
   }
 }
 
+/* Quicker 动作生态专栏样式 */
+.quicker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.quicker-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.quicker-card:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 4px 24px rgba(56, 189, 248, 0.08);
+  transform: translateY(-2px);
+}
+
+.quicker-card.featured {
+  border-color: rgba(56, 189, 248, 0.3);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.04) 0%, rgba(18, 20, 23, 0.95) 100%);
+}
+
+.quicker-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #0284c7 0%, #38bdf8 50%, transparent 100%);
+}
+
+.quicker-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.quicker-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  line-height: 1.35;
+}
+
+.quicker-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-xs);
+  background-color: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  white-space: nowrap;
+}
+
+.quicker-desc {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.quicker-features {
+  list-style: none;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  padding-left: 0;
+}
+
+.quicker-features li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.quicker-features li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+  font-family: var(--font-mono);
+}
+
+.quicker-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  color: #38bdf8;
+  text-decoration: none;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-subtle);
+  transition: var(--transition);
+}
+
+.quicker-action-link:hover {
+  color: #7dd3fc;
+  gap: 0.6rem;
+}
+
+@media (max-width: 992px) {
+  .quicker-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .quicker-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
@@ -1824,6 +1952,7 @@ body {
         <a href="#matching-matrix" class="nav-link">岗位匹配度</a>
         <a href="#github-ecosystem" class="nav-link">GitHub 开源</a>
         <a href="#projects" class="nav-link">AI OS 与核心项目</a>
+        <a href="#quicker-showcase" class="nav-link">Quicker 动作</a>
         <a href="#agent-thinking" class="nav-link">Agent 思考</a>
         <a href="#design-showcase" class="nav-link">设计体系</a>
         <a href="#experience" class="nav-link">经历</a>
@@ -2393,6 +2522,155 @@ body {
               </div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quicker 动作生态专栏（前 5 个高频动作） -->
+    <section id="quicker-showcase" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">DESKTOP RPA & QUICKER ECOSYSTEM</span>
+          <h2 class="section-title">Quicker 桌面效率与自动化动作生态</h2>
+          <p class="section-desc">
+            基于 Win32 底层、WebView2 与 C# 构建的轻量级自动化与大模型中继工具流。由我（Quicker 开发者：洛洛罗）独立开发并开源分享，精选前 5 款核心生产力动作。
+          </p>
+        </div>
+
+        <div class="quicker-grid">
+          <!-- 动作 1: DeepSeek网页转API -->
+          <div class="quicker-card featured">
+            <div>
+              <div class="quicker-header">
+                <div>
+                  <h3 class="quicker-title">DeepSeek网页转API (deepseekRelay)</h3>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 基础设施</span>
+                </div>
+                <span class="quicker-tag">大模型反代中继</span>
+              </div>
+              <p class="quicker-desc">
+                利用 Edge WebView2 技术在后台构建隐形浏览器通道，将标准 OpenAI API 请求无缝转发至 DeepSeek 网页端，实现零成本标准兼容接口与流式（Streaming）思考过程实时回传。
+              </p>
+              <ul class="quicker-features">
+                <li>基于 WebView2 隐式容器，免配置代理与逆向维护</li>
+                <li>完全兼容 OpenAI 接口规范，支持 ChatBox / NextChat</li>
+                <li>支持完整的 DeepSeek-R1 思考过程（Reasoning）流式输出</li>
+              </ul>
+            </div>
+            <a href="https://getquicker.net/Sharedaction?code=1ee89389-2e3e-4a77-c23f-08de3147f78a" target="_blank" class="quicker-action-link">
+              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
+            </a>
+          </div>
+
+          <!-- 动作 2: Gemini网页转API -->
+          <div class="quicker-card featured">
+            <div>
+              <div class="quicker-header">
+                <div>
+                  <h3 class="quicker-title">Gemini网页转API (geminiRelay)</h3>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 基础设施</span>
+                </div>
+                <span class="quicker-tag">多模态与长上下文</span>
+              </div>
+              <p class="quicker-desc">
+                为 Google Gemini 打造的本地网页转标准 API 自动化管道。支持超长上下文传递与多轮对话，内置会话自动保活与错误智能重试机制。
+              </p>
+              <ul class="quicker-features">
+                <li>打通 Gemini 免费额度，为本地 Agent 赋予超长窗口能力</li>
+                <li>多 Token 会话池弹性轮询与断线自动重连</li>
+                <li>高吞吐并发响应与原生 Markdown 结构解析</li>
+              </ul>
+            </div>
+            <a href="https://getquicker.net/Sharedaction?code=54037596-7003-47cb-dca5-08de3bb54158" target="_blank" class="quicker-action-link">
+              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
+            </a>
+          </div>
+
+          <!-- 动作 3: 中键轮盘 -->
+          <div class="quicker-card">
+            <div>
+              <div class="quicker-header">
+                <div>
+                  <h3 class="quicker-title">中键轮盘 (高敏桌面手势)</h3>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 人机交互</span>
+                </div>
+                <span class="quicker-tag">创作者效率神器</span>
+              </div>
+              <p class="quicker-desc">
+                针对高频设计与编程场景研发的鼠标中键多维扇形交互轮盘。结合人体工程学与自适应屏幕坐标，实现指尖毫秒级的多维快捷操作。
+              </p>
+              <ul class="quicker-features">
+                <li>Win32 底层全局低延迟挂钩，杜绝卡顿与跳帧</li>
+                <li>扇形多级嵌套菜单，支持自定义动作链与快捷键映射</li>
+                <li>支持窗口上下文自动感知与智能动态适配</li>
+              </ul>
+            </div>
+            <a href="https://getquicker.net/Sharedaction?code=4e56a529-7213-4b2b-f931-08de3ca88ddf" target="_blank" class="quicker-action-link">
+              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
+            </a>
+          </div>
+
+          <!-- 动作 4: QK扳手 -->
+          <div class="quicker-card">
+            <div>
+              <div class="quicker-header">
+                <div>
+                  <h3 class="quicker-title">QK扳手 (动作底层诊断维护)</h3>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 极客工具</span>
+                </div>
+                <span class="quicker-tag">开发者辅助利器</span>
+              </div>
+              <p class="quicker-desc">
+                专为 Quicker 进阶创作者研发的动作调试与逆向维护工具箱。提供动作变量解构、结构树可视化与性能瓶颈诊断能力。
+              </p>
+              <ul class="quicker-features">
+                <li>动作底层 JSON 结构解构与字段合法性验证</li>
+                <li>支持运行时参数注入与跨动作环境上下文仿真</li>
+                <li>快速修复动作引用断链与废弃依赖清理</li>
+              </ul>
+            </div>
+            <a href="https://getquicker.net/Sharedaction?code=f10c350a-f5cf-4726-543d-08de40f9c963" target="_blank" class="quicker-action-link">
+              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
+            </a>
+          </div>
+
+          <!-- 动作 5: DeepSeek-AI测试 -->
+          <div class="quicker-card">
+            <div>
+              <div class="quicker-header">
+                <div>
+                  <h3 class="quicker-title">DeepSeek-AI测试 (快速推理验证)</h3>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 提示工程</span>
+                </div>
+                <span class="quicker-tag">即开即测桌面面板</span>
+              </div>
+              <p class="quicker-desc">
+                轻量级桌面 AI 验证面板，专为智能体开发者快速测试 Prompt 提示词、Function Calling 格式约束与推理质量而设计。
+              </p>
+              <ul class="quicker-features">
+                <li>毫秒级呼出测试面板，免去打开重型 Web UI 的等待时间</li>
+                <li>预置系统级 Prompt 模板与智能体上下文压测样例</li>
+                <li>一键复制结构化 JSON 响应，无缝衔接代码调试</li>
+              </ul>
+            </div>
+            <a href="https://getquicker.net/Sharedaction?code=21f7b64f-351f-4f5b-c26f-08de3147f78a" target="_blank" class="quicker-action-link">
+              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
+            </a>
+          </div>
+
+          <!-- 引导卡片：查看 Quicker 个人分享中心 -->
+          <div class="quicker-card" style="border-style: dashed; justify-content: center; text-align: center; background-color: rgba(255, 255, 255, 0.01);">
+            <div style="padding: 1rem 0;">
+              <span class="mono" style="font-size: 0.8rem; color: #38bdf8; display: block; margin-bottom: 0.5rem;">QUICKER AUTHOR PROFILE</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 0.5rem;">更多 Quicker 自研动作</h3>
+              <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                除以上 5 款高频动作外，还发布有 gemini-AI测试、自动化剪辑脚本等多款工具，欢迎前往分享主页查看。
+              </p>
+              <a href="https://getquicker.net/Member/MyShare" target="_blank" class="btn btn-outline btn-sm mono">
+                访问 Quicker 分享主页 ↗
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
