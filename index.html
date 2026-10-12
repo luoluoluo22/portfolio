@@ -2,1361 +2,179 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>罗名扬 | 求职：AI Agent开发工程师 · 全栈架构与落地</title>
-  <meta name="description" content="罗名扬求职 AI Agent 开发工程师：GitHub 3914+ Star 开源作者、燕子 AI 操作系统架构师、剪艾 JianAI 桌面智能体作者、B站 36万+ 播放技术UP主、5年商业视觉与 UI/UX 设计沉淀。">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf5">
+  <meta name="description" content="罗名扬的 AI Agent 开发工程师简历与项目作品集：剪映全自动剪辑 Skill、燕子 Yanzi AI OS、剪艾 JianAI。成都，随时到岗。">
+  <meta property="og:title" content="罗名扬 | AI Agent 开发工程师">
+  <meta property="og:description" content="5年商业视觉设计背景，2024年11月起专注 AI Agent、桌面自动化、工具调用和视频剪辑自动化。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/yanzi-overview.png">
+  <title>罗名扬 | AI Agent 开发工程师 · 简历与作品集</title>
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+  <link rel="stylesheet" href="hr-home.css">
+  <script src="hr-home.js" defer></script>
 </head>
 <body>
-  <!-- 顶部导航栏 -->
-  <header class="site-header">
-    <div class="nav-container">
-      <a href="#hero" class="brand-logo">
-        <span class="logo-badge">LY</span>
-        <span class="logo-text">罗名扬 <small class="mono">/ AI Agent Developer</small></span>
-      </a>
-
-      <nav class="nav-menu" id="navMenu">
-        <a href="#matching-matrix" class="nav-link">岗位匹配度</a>
-        <a href="#github-ecosystem" class="nav-link">GitHub 开源</a>
-        <a href="#projects" class="nav-link">AI OS 与核心项目</a>
-        <a href="#quicker-showcase" class="nav-link">Quicker 动作</a>
-        <a href="#agent-thinking" class="nav-link">Agent 思考</a>
-        <a href="#design-showcase" class="nav-link">设计体系</a>
-        <a href="#experience" class="nav-link">经历</a>
-        <a href="#contact" class="nav-link">联系</a>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a class="wordmark" href="#top" aria-label="罗名扬，返回首页">罗名扬<span class="wordmark-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link is-active" href="#top">首页</a>
+        <a class="nav-link" href="#projects">项目</a>
+        <a class="nav-link" href="#experience">经历</a>
+        <a class="nav-link" href="#contact">联系方式</a>
       </nav>
-
-      <div class="nav-actions">
-        <a href="assets/resume.pdf" download="罗名扬_AI_Agent开发工程师_简历.pdf" class="btn btn-primary btn-sm">
-          下载简历 PDF
+      <div class="header-actions">
+        <a class="button button-primary button-sm" href="assets/resume.pdf" download="罗名扬_AI_Agent开发工程师_简历.pdf">
+          <span aria-hidden="true">↓</span> 下载简历
         </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="展开导航菜单">
+        <button class="menu-button" type="button" aria-label="打开导航" aria-controls="mobileNav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
+    <nav id="mobileNav" class="mobile-nav" aria-label="移动端导航" hidden>
+      <a href="#top">首页</a><a href="#projects">项目</a><a href="#experience">经历</a><a href="#contact">联系方式</a>
+    </nav>
   </header>
 
-  <!-- 主体区域 -->
-  <main>
-    <!-- Hero 核心介绍 -->
-    <!-- Hero 核心介绍 -->
-    <section id="hero" class="hero-section">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="status-pill">
-            <span class="status-dot"></span>
-            <span class="mono">求职意向 · 随时到岗 · 成都 / 远程</span>
-          </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span aria-hidden="true">👋</span> 你好，我是</div>
+          <h1 id="hero-title">罗名扬</h1>
+          <h2>AI Agent开发工程师</h2>
+          <span class="short-accent" aria-hidden="true"></span>
+          <p class="hero-intro">5年商业视觉设计背景，2024年11月起转向 AI 应用开发，聚焦 <strong>AI Agent、桌面自动化、工具调用</strong>与视频剪辑自动化。</p>
 
-          <h1 class="hero-title">
-            求职目标：<br>
-            <span class="text-white">AI Agent 开发工程师</span>
-          </h1>
-
-          <p class="hero-desc">
-            主导开源 <strong>3,914+ Stars</strong> 剪映自动化 Agent 核心库，独立研发 <strong>AI 桌面操作系统「燕子」</strong> 与对话式剪辑智能体 <strong>「剪艾」</strong>。5 年商业视觉底蕴，专注将大模型转化为高确定性、可执行的实体生产力。
-          </p>
-
-          <div class="hero-metrics-pill">
-            <div class="metric-pill">GitHub <strong>3,914+ Stars</strong></div>
-            <div class="metric-pill">燕子 <strong>AI OS 宿主系统</strong></div>
-            <div class="metric-pill">剪艾 <strong>JianAI 桌面 Agent</strong></div>
-            <div class="metric-pill">B站技术播放 <strong>366,000+</strong></div>
-            <div class="metric-pill">单视频最高播放 <strong>120,000+</strong></div>
-            <div class="metric-pill">独立软件著作权认证</div>
-            <div class="metric-pill">站酷认证创作者</div>
-          </div>
-
+          <dl class="quick-profile">
+            <div class="profile-item"><dt><span class="profile-icon" aria-hidden="true">⌖</span>所在地</dt><dd>成都</dd></div>
+            <div class="profile-item"><dt><span class="profile-icon" aria-hidden="true">▣</span>求职状态</dt><dd>离职 · 随时到岗</dd></div>
+            <div class="profile-item"><dt><span class="profile-icon" aria-hidden="true">☎</span>联系电话</dt><dd><a href="tel:18428029750">18428029750</a></dd></div>
+            <div class="profile-item"><dt><span class="profile-icon" aria-hidden="true">✉</span>邮箱</dt><dd><a href="mailto:luomingyang_design@163.com">luomingyang_design@163.com</a></dd></div>
+            <div class="profile-item"><dt><span class="profile-icon" aria-hidden="true">⌘</span>GitHub</dt><dd><a href="https://github.com/luoluoluo22" target="_blank" rel="noopener noreferrer">luoluoluo22 ↗</a></dd></div>
+            <div class="profile-item"><dt><span class="profile-icon" aria-hidden="true">✦</span>学历</dt><dd>成都理工大学 · 本科</dd></div>
+          </dl>
           <div class="hero-cta">
-            <a href="#matching-matrix" class="btn btn-primary">
-              查看 HR 岗位匹配度
-            </a>
-            <a href="#projects" class="btn btn-secondary">
-              核心架构与项目
-            </a>
-            <a href="https://github.com/luoluoluo22" target="_blank" class="btn btn-outline mono">
-              <svg class="brand-svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-              GitHub: luoluoluo22
-            </a>
+            <a class="button button-primary" href="assets/resume.pdf" download="罗名扬_AI_Agent开发工程师_简历.pdf">下载 PDF 简历 <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="#projects">查看代表项目 <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-
-        <div class="hero-card-wrapper">
-          <div class="profile-card">
-            <div class="card-header">
-              <div class="avatar-container">
-                <img src="assets/avatar.jpg" alt="罗名扬" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'">
-              </div>
-              <div class="profile-meta">
-                <h3>罗名扬</h3>
-                <p class="profile-role">求职：AI Agent 开发工程师 / 架构师</p>
-                <p class="profile-handle">@luoluoluo22 · 成都</p>
-              </div>
-            </div>
-
-            <div class="card-divider"></div>
-
-            <div class="profile-specs">
-              <div class="spec-item">
-                <span class="spec-label">核心方向</span>
-                <span class="spec-value"><strong>AI Agent</strong> · <strong>AI OS</strong> · <strong>MCP 生态</strong></span>
-              </div>
-              <div class="spec-item">
-                <span class="spec-label">开源声量</span>
-                <span class="spec-value">GitHub <strong>3914+ Stars</strong> · 全网 36W+ 播放</span>
-              </div>
-              <div class="spec-item">
-                <span class="spec-label">工程著作</span>
-                <span class="spec-value">《燕子桌面快捷效率宿主软件》（软著认证）</span>
-              </div>
-              <div class="spec-item">
-                <span class="spec-label">审美设计</span>
-                <span class="spec-value"><strong>站酷认证创作者</strong> · 5 年商业视觉、3D 会展与自研 UI</span>
-              </div>
-            </div>
-
-            <div class="card-footer">
-              <button class="btn btn-secondary btn-full copy-btn mono" data-copy="18428029750">
-                <span>复制手机: 18428029750</span>
-              </button>
-            </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="assets/avatar.jpg" alt="罗名扬个人头像" fetchpriority="high">
           </div>
+          <div class="hero-handwritten" aria-hidden="true">用 AI<br>让创意更高效<span></span></div>
         </div>
       </div>
     </section>
 
-    <!-- 核心数据看板与图表 -->
-    <section class="section">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-num" style="display: flex; align-items: center; justify-content: space-between;">
-              <span>3,914+</span>
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            </div>
-            <div class="stat-label">GitHub 代表作 Stars</div>
-            <p class="stat-desc">全网标杆剪映自动化 Agent 基础设施。</p>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-num" style="display: flex; align-items: center; justify-content: space-between;">
-              <span>366,000+</span>
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="#38bdf8"><path d="M4 6.47L5.76 10H20v8H4V6.47M22 4h-4l2-4h-2l-2 4H8L6 0H4l2 4H2v16h20V4z"/></svg>
-            </div>
-            <div class="stat-label">B站技术视频总播放</div>
-            <p class="stat-desc">技术作品传播力强，单视频最高播放超 120,000+。</p>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-num" style="display: flex; align-items: center; justify-content: space-between;">
-              <span>AI OS</span>
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="#34d399"><path d="M4 2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 12h7a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4a2 2 0 012-2zm12 0h4a2 2 0 012 2v4a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4a2 2 0 012-2z"/></svg>
-            </div>
-            <div class="stat-label">自研操作系统宿主</div>
-            <p class="stat-desc">赋能 AI 自主发现与调度物理桌面（已获软著认证）。</p>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-num" style="display: flex; align-items: center; justify-content: space-between;">
-              <span>5 年+</span>
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="#a78bfa"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.33 19.56 10.63 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
-            </div>
-            <div class="stat-label">商业视觉与 UI/UX 沉淀</div>
-            <p class="stat-desc">站酷认证创作者，兼具技术架构与高阶人机交互美学。</p>
-          </div>
+    <section class="overview container section-pad" aria-labelledby="overview-title">
+      <div class="overview-shell">
+        <div class="section-heading overview-heading">
+          <h2 id="overview-title">HR 一眼看懂</h2>
+          <span class="section-en">CORE INFORMATION</span>
         </div>
-
-        <!-- 可视化图表区：AI Agent 执行管道流程图 + 核心能力指标条 -->
-        <div class="pipeline-flow-wrapper">
-          <div class="pipeline-flow-header">
-            <div class="pipeline-flow-title">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="#38bdf8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              <span>AI Agent 工程执行闭环流水线 (Architecture Pipeline)</span>
-            </div>
-            <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">DETERMINISTIC EXECUTION</span>
-          </div>
-
-          <div class="pipeline-flow-grid">
-            <div class="pipeline-step-card">
-              <div class="pipeline-step-num"><span>01 / INPUT</span><span style="color:#38bdf8;">感知层</span></div>
-              <div class="pipeline-step-title">物理环境捕获</div>
-              <div class="pipeline-step-desc">Win32 窗口挂钩、剪贴板监控、屏幕上下文感知、视频音画特征提取。</div>
-            </div>
-
-            <div class="pipeline-step-card">
-              <div class="pipeline-step-num"><span>02 / PLANNING</span><span style="color:#60a5fa;">契约规划</span></div>
-              <div class="pipeline-step-title">严格 Schema 契约</div>
-              <div class="pipeline-step-desc">MCP 跨模型端点、JSON Schema 参数强校验、动态能力自发现网络。</div>
-            </div>
-
-            <div class="pipeline-step-card">
-              <div class="pipeline-step-num"><span>03 / ACTION</span><span style="color:#34d399;">物理执行</span></div>
-              <div class="pipeline-step-title">系统工具调度</div>
-              <div class="pipeline-step-desc">剪映协议逆向调用、桌面进程调度、时间线状态机操作、模型网关流式路由。</div>
-            </div>
-
-            <div class="pipeline-step-card">
-              <div class="pipeline-step-num"><span>04 / AUDIT</span><span style="color:#fbbf24;">状态回传</span></div>
-              <div class="pipeline-step-title">闭环自愈修正</div>
-              <div class="pipeline-step-desc">有界运行审计日志、异常捕获重试、执行状态持久化与下一步自愈。</div>
-            </div>
-          </div>
-
-          <!-- 能力雷达水平进度条图表 -->
-          <div class="agent-skills-chart-box">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
-              <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-pure);">核心技能栈熟练度指标 (Core Competencies)</span>
-              <span class="mono" style="font-size: 0.72rem; color: var(--text-muted);">EVALUATED BY PRODUCTION WORKS</span>
-            </div>
-
-            <div class="chart-bar-item">
-              <div class="chart-bar-header">
-                <span class="chart-bar-label">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="#38bdf8"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.38-1 1.72V7h2a4 4 0 014 4v1h1a2 2 0 012 2v4a2 2 0 01-2 2h-1v1a4 4 0 01-4 4H8a4 4 0 01-4-4v-1H3a2 2 0 01-2-2v-4a2 2 0 012-2h1v-1a4 4 0 014-4h2V5.72A2 2 0 019 4a2 2 0 012-2h1z"/></svg>
-                  Agentic Workflow & MCP 协议编排 (Tool Calling / 规划引擎)
-                </span>
-                <span class="chart-bar-val">98%</span>
-              </div>
-              <div class="chart-progress-bg"><div class="chart-progress-fill cyan" style="width: 98%;"></div></div>
-            </div>
-
-            <div class="chart-bar-item">
-              <div class="chart-bar-header">
-                <span class="chart-bar-label">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="#10b981"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-                  客户端底层与桌面自动化 (Python / C# .NET 9 / Win32 / Electron)
-                </span>
-                <span class="chart-bar-val">95%</span>
-              </div>
-              <div class="chart-progress-bg"><div class="chart-progress-fill green" style="width: 95%;"></div></div>
-            </div>
-
-            <div class="chart-bar-item">
-              <div class="chart-bar-header">
-                <span class="chart-bar-label">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="#3b82f6"><path d="M4 2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 12h7a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4a2 2 0 012-2zm12 0h4a2 2 0 012 2v4a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4a2 2 0 012-2z"/></svg>
-                  大模型网关与协议中继 (FastAPI / 兼容协议 / 流式管道)
-                </span>
-                <span class="chart-bar-val">92%</span>
-              </div>
-              <div class="chart-progress-bg"><div class="chart-progress-fill" style="width: 92%;"></div></div>
-            </div>
-
-            <div class="chart-bar-item">
-              <div class="chart-bar-header">
-                <span class="chart-bar-label">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="#f59e0b"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.33 19.56 10.63 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
-                  UI/UX 设计系统与 AI 原生交互 (5年商业视觉 / 站酷认证创作者)
-                </span>
-                <span class="chart-bar-val">96%</span>
-              </div>
-              <div class="chart-progress-bg"><div class="chart-progress-fill amber" style="width: 96%;"></div></div>
-            </div>
-          </div>
+        <div class="overview-grid">
+          <div class="overview-item"><span class="info-symbol" aria-hidden="true">01</span><h3>应聘岗位</h3><p>AI Agent<br>开发工程师</p></div>
+          <div class="overview-item"><span class="info-symbol" aria-hidden="true">02</span><h3>工作背景</h3><p>5年设计经历<br>+ AI独立开发</p></div>
+          <div class="overview-item"><span class="info-symbol" aria-hidden="true">03</span><h3>核心技术</h3><p>Python / TS / C#<br>Electron / MCP</p></div>
+          <div class="overview-item"><span class="info-symbol" aria-hidden="true">04</span><h3>代表成果</h3><p>剪映 Skill 开源<br><strong>3,914+ Stars</strong></p></div>
+          <div class="overview-item"><span class="info-symbol" aria-hidden="true">05</span><h3>商业经历</h3><p>企业 AI 剪辑<br>部署与顾问服务</p></div>
+          <div class="overview-item"><span class="info-symbol" aria-hidden="true">06</span><h3>综合能力</h3><p>产品理解、审美<br>与工程交付</p></div>
         </div>
       </div>
     </section>
 
-    <!-- HR 岗位匹配度透视表 -->
-    <section id="matching-matrix" class="section matrix-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">RECRUITER & ROLE MATCHING MATRIX</span>
-          <h2 class="section-title">目标岗位匹配度透视表</h2>
-          <p class="section-desc">深度契合当前 AI 落地与企业效能升级的 4 大核心方向。用真实的开源成果、落地架构与作品证明实力。</p>
-        </div>
-
-        <div class="matrix-grid">
-          <!-- 岗位 1: AI Agent 研发工程师 / 架构师 -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <div>
-                <h3 class="matrix-role-title">AI Agent 研发工程师 / 智能体架构师</h3>
-                <p class="matrix-role-sub">AI Agent Engineer / Full-Stack Architect</p>
-              </div>
-              <div class="matrix-match-rate">
-                <div class="match-score">98%</div>
-                <div class="match-label">MATCH RATE</div>
-              </div>
-            </div>
-
-            <div class="matrix-comparison">
-              <div class="compare-block">
-                <span class="compare-heading jd">● 常见 JD 核心要求</span>
-                <p class="compare-text">
-                  精通 Agentic Workflow、Tool Calling 与 MCP 协议，能独立主导复杂场景智能体交付。
-                </p>
-              </div>
-
-              <div class="compare-block">
-                <span class="compare-heading my">● 罗名扬的核心优势</span>
-                <p class="compare-text">
-                  主导开源 <strong>3,914★</strong> 剪映自动化 Agent 核心库，自研对话式剪辑 <strong>剪艾 JianAI</strong> 与 MCP 跨模型端点。
-                </p>
-              </div>
-            </div>
-
-            <div class="matrix-evidence">
-              <div class="evidence-title">落地成果与证据链 (PROOF OF WORK)</div>
-              <div class="evidence-tags">
-                <a href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" class="evidence-tag">jianying-editor-skill (★3914)</a>
-                <a href="#project-jianai" class="evidence-tag">剪艾 JianAI (桌面 Agent)</a>
-                <a href="https://github.com/luoluoluo22/MCP-SuperAssistant" target="_blank" class="evidence-tag">MCP-SuperAssistant</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 岗位 2: AI 自动化与企业提效专家 / RPA 架构师 -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <div>
-                <h3 class="matrix-role-title">AI 自动化解决方案专家 / 提效架构师</h3>
-                <p class="matrix-role-sub">Automation Solutions Architect / Workflow RPA</p>
-              </div>
-              <div class="matrix-match-rate">
-                <div class="match-score">96%</div>
-                <div class="match-label">MATCH RATE</div>
-              </div>
-            </div>
-
-            <div class="matrix-comparison">
-              <div class="compare-block">
-                <span class="compare-heading jd">● 常见 JD 核心要求</span>
-                <p class="compare-text">
-                  洞察业务瓶颈，具备协议逆向、系统挂钩与 RPA 流水线能力，有真实商业交付与提效数据。
-                </p>
-              </div>
-
-              <div class="compare-block">
-                <span class="compare-heading my">● 罗名扬的核心优势</span>
-                <p class="compare-text">
-                  为北京傲福瑞交付私有化 AI 剪辑系统，<strong>团队综合提效 80%+</strong>；自研多模型反代网关与 Quicker 自动化工具流。
-                </p>
-              </div>
-            </div>
-
-            <div class="matrix-evidence">
-              <div class="evidence-title">落地成果与证据链 (PROOF OF WORK)</div>
-              <div class="evidence-tags">
-                <span class="evidence-tag">企业私有化交付 (80%+ 提效)</span>
-                <a href="#quicker-showcase" class="evidence-tag">Quicker 自动化生态</a>
-                <a href="https://www.bilibili.com/video/BV16UPfzbENf" target="_blank" class="evidence-tag">推理反代网关</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 岗位 3: AI 操作系统 / 桌面级客户端研发 -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <div>
-                <h3 class="matrix-role-title">AI 操作系统架构 / 客户端系统研发</h3>
-                <p class="matrix-role-sub">AI OS Architecture / Client System Engineer</p>
-              </div>
-              <div class="matrix-match-rate">
-                <div class="match-score">95%</div>
-                <div class="match-label">MATCH RATE</div>
-              </div>
-            </div>
-
-            <div class="matrix-comparison">
-              <div class="compare-block">
-                <span class="compare-heading jd">● 常见 JD 核心要求</span>
-                <p class="compare-text">
-                  精通桌面底层机制（Windows Win32 / 进程沙箱），具备 C#/.NET 或 Electron 客户端扩展架构经验。
-                </p>
-              </div>
-
-              <div class="compare-block">
-                <span class="compare-heading my">● 罗名扬的核心优势</span>
-                <p class="compare-text">
-                  自研面向智能体的 <strong>燕子 AI 操作系统（获国家软著认证）</strong>，实现底层能力自发现网络与跨程序调用调度。
-                </p>
-              </div>
-            </div>
-
-            <div class="matrix-evidence">
-              <div class="evidence-title">落地成果与证据链 (PROOF OF WORK)</div>
-              <div class="evidence-tags">
-                <span class="evidence-tag">燕子 AI OS (独立软件著作权)</span>
-                <a href="#project-jianai" class="evidence-tag">JianAI 桌面客户端 (Release)</a>
-                <span class="evidence-tag">.NET 9 + Win32 原生挂钩</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 岗位 4: AI 原生产品体验设计师 / 资深 UI/UX -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <div>
-                <h3 class="matrix-role-title">AI 原生产品设计师 / 资深 UI/UX</h3>
-                <p class="matrix-role-sub">AI Product Designer / Senior UI/UX Architect</p>
-              </div>
-              <div class="matrix-match-rate">
-                <div class="match-score">95%</div>
-                <div class="match-label">MATCH RATE</div>
-              </div>
-            </div>
-
-            <div class="matrix-comparison">
-              <div class="compare-block">
-                <span class="compare-heading jd">● 常见 JD 核心要求</span>
-                <p class="compare-text">
-                  5 年以上设计经验，具备全套 Design System 规范能力，深刻理解 AI 人机协作与非确定性交互。
-                </p>
-              </div>
-
-              <div class="compare-block">
-                <span class="compare-heading my">● 罗名扬的核心优势</span>
-                <p class="compare-text">
-                  <strong>5 年商业视觉功底 + 站酷认证创作者</strong>；自研 Geist 极简暗黑设计系统，能将底层逻辑转化为低认知负担的高级界面。
-                </p>
-              </div>
-            </div>
-
-            <div class="matrix-evidence">
-              <div class="evidence-title">落地成果与证据链 (PROOF OF WORK)</div>
-              <div class="evidence-tags">
-                <a href="#design-showcase" class="evidence-tag">Geist 设计系统与排版规范</a>
-                <a href="https://www.zcool.com.cn/u/ZNTI2NzE0OTY=" target="_blank" class="evidence-tag">站酷作品集主页</a>
-                <span class="evidence-tag">云车宝 APP 全案 UI</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="container section-pad section-projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><h2 id="projects-title">代表项目</h2><p>不只会使用 AI 工具，更注重把方案做成真实可用的产品。</p></div>
+        <a class="text-link" href="https://github.com/luoluoluo22?tab=repositories" target="_blank" rel="noopener noreferrer">更多项目 <span aria-hidden="true">→</span></a>
       </div>
-    </section>
-
-    <!-- GitHub 开源仓库与 Agent 生态 -->
-    <section id="github-ecosystem" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">OPEN SOURCE & AGENT ECOSYSTEM</span>
-          <h2 class="section-title">GitHub 开源仓库与开发成果</h2>
-          <p class="section-desc">深度实践 Tool Use、Model Context Protocol (MCP)、大模型协议逆向与桌面代理交互。</p>
-        </div>
-
-        <div class="github-grid">
-          <!-- 仓库 1 -->
-          <a href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" class="github-card">
-            <div class="github-card-top">
-              <span class="repo-name">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#38bdf8" style="vertical-align:-2px; margin-right:6px;"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
-                jianying-editor-skill
-              </span>
-              <span class="repo-stars">★ 3,914</span>
-            </div>
-            <p class="repo-desc">
-              全网知名的剪映自动化 Agent 核心库。赋能智能体通过自然语言自主接管视频切片、音画对齐与排版渲染全流程。
-            </p>
-            <div class="repo-footer">
-              <span class="repo-lang"><span class="lang-dot"></span>Python</span>
-              <span>核心代表作</span>
-            </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <a class="project-image" href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" rel="noopener noreferrer" aria-label="查看剪映全自动剪辑 Skill 源码">
+            <img src="assets/bilibili-showcase.png" alt="剪映自动化演示与视频剪辑画面" loading="eager">
+            <span class="project-badge">开源项目</span>
           </a>
+          <div class="project-body">
+            <h3>剪映全自动剪辑 Skill</h3>
+            <p>让 Agent 使用剪映专业版完成素材导入、配音、字幕、特效与导出等剪辑任务。</p>
+            <ul class="project-points"><li>自然语言驱动自动化剪辑流程</li><li>支持草稿时间线生成与素材处理</li><li>公开开源，GitHub 3,914+ Stars</li></ul>
+            <div class="project-bottom"><span class="stack-label">技术栈</span><span>Python · 剪映草稿 · UI 自动化</span></div>
+            <a class="project-more" href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" rel="noopener noreferrer">查看源代码 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
 
-          <!-- 仓库 2 -->
-          <a href="https://github.com/luoluoluo22/JianAI" target="_blank" class="github-card">
-            <div class="github-card-top">
-              <span class="repo-name">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#34d399" style="vertical-align:-2px; margin-right:6px;"><path d="M4 6.47L5.76 10H20v8H4V6.47M22 4h-4l2-4h-2l-2 4H8L6 0H4l2 4H2v16h20V4z"/></svg>
-                JianAI (剪艾)
-              </span>
-              <span class="repo-stars">★ Releases</span>
-            </div>
-            <p class="repo-desc">
-              桌面端 AI 对话式剪辑系统。通过自然语言直接操控时间线 JSON 状态树，免除复杂环境配置即开即用。
-            </p>
-            <div class="repo-footer">
-              <span class="repo-lang"><span class="lang-dot ts"></span>TypeScript / Electron</span>
-              <span>桌面 Agent 应用</span>
-            </div>
+        <article class="project-card">
+          <a class="project-image" href="https://github.com/luoluoluo22/yanzi" target="_blank" rel="noopener noreferrer" aria-label="查看燕子 Yanzi AI OS 源码">
+            <img src="assets/yanzi-overview.png" alt="燕子 Yanzi AI OS 桌面应用截图" loading="eager">
           </a>
+          <div class="project-body">
+            <h3>燕子 <span class="title-sub">Yanzi AI OS</span></h3>
+            <p>面向 Windows 的桌面 AI 宿主与小程序生态，让智能体调用真实的本地工具与服务。</p>
+            <ul class="project-points"><li>桌面自动化和跨应用工具调用</li><li>小程序能力管理与设备同步</li><li>集成 AI 对话、插件与云端服务</li></ul>
+            <div class="project-bottom"><span class="stack-label">技术栈</span><span>C# / .NET · Win32 · AI Agent</span></div>
+            <a class="project-more" href="https://github.com/luoluoluo22/yanzi" target="_blank" rel="noopener noreferrer">查看源代码 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
 
-          <!-- 仓库 3 -->
-          <a href="https://github.com/luoluoluo22/MCP-SuperAssistant" target="_blank" class="github-card">
-            <div class="github-card-top">
-              <span class="repo-name">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#60a5fa" style="vertical-align:-2px; margin-right:6px;"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.38-1 1.72V7h2a4 4 0 014 4v1h1a2 2 0 012 2v4a2 2 0 01-2 2h-1v1a4 4 0 01-4 4H8a4 4 0 01-4-4v-1H3a2 2 0 01-2-2v-4a2 2 0 012-2h1v-1a4 4 0 014-4h2V5.72A2 2 0 019 4a2 2 0 012-2h1z"/></svg>
-                MCP-SuperAssistant
-              </span>
-              <span class="repo-stars">★ 10</span>
-            </div>
-            <p class="repo-desc">
-              跨模型 MCP 标准协议中继端点。打通 ChatGPT、Claude、DeepSeek 与桌面本地工具的无缝调用互联。
-            </p>
-            <div class="repo-footer">
-              <span class="repo-lang"><span class="lang-dot ts"></span>TypeScript</span>
-              <span>MCP 协议生态</span>
-            </div>
+        <article class="project-card">
+          <a class="project-image" href="https://github.com/luoluoluo22/JianAI" target="_blank" rel="noopener noreferrer" aria-label="查看剪艾 JianAI 源码">
+            <img src="assets/jianai-editor.png" alt="剪艾 JianAI 对话式视频编辑器界面" loading="eager">
           </a>
-
-          <!-- 仓库 4 -->
-          <a href="https://github.com/luoluoluo22/gemini-web-quicker-skill" target="_blank" class="github-card">
-            <div class="github-card-top">
-              <span class="repo-name">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24" style="vertical-align:-2px; margin-right:6px;"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                gemini-web-quicker-skill
-              </span>
-              <span class="repo-stars">★ 16</span>
-            </div>
-            <p class="repo-desc">
-              将 Gemini 网页端封装为桌面端自动化技能。打通百万 Token 超长上下文窗口与多模态文件输入。
-            </p>
-            <div class="repo-footer">
-              <span class="repo-lang"><span class="lang-dot"></span>Python</span>
-              <span>多模态自动化</span>
-            </div>
-          </a>
-
-          <!-- 仓库 5 -->
-          <a href="https://github.com/luoluoluo22/grok-media-skill" target="_blank" class="github-card">
-            <div class="github-card-top">
-              <span class="repo-name">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ec4899" style="vertical-align:-2px; margin-right:6px;"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-                grok-media-skill
-              </span>
-              <span class="repo-stars">★ 12</span>
-            </div>
-            <p class="repo-desc">
-              针对 Grok 媒体生成的多模态管道工具包。自动化驱动高质量图像与视频流水线生成与拼接。
-            </p>
-            <div class="repo-footer">
-              <span class="repo-lang"><span class="lang-dot"></span>Python</span>
-              <span>生成式管道</span>
-            </div>
-          </a>
-
-          <!-- 仓库 6 -->
-          <a href="https://github.com/luoluoluo22/jilun" target="_blank" class="github-card">
-            <div class="github-card-top">
-              <span class="repo-name">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#a78bfa" style="vertical-align:-2px; margin-right:6px;"><path d="M4 2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 12h7a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4a2 2 0 012-2zm12 0h4a2 2 0 012 2v4a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4a2 2 0 012-2z"/></svg>
-                jilun (棘轮)
-              </span>
-              <span class="repo-stars">★ Active</span>
-            </div>
-            <p class="repo-desc">
-              不可变事件驱动的个人长期 AI 数据中枢。基于 JSONL 架构，为 Agent 沉淀不可篡改的决策事实与经验知识库。
-            </p>
-            <div class="repo-footer">
-              <span class="repo-lang"><span class="lang-dot"></span>Python / Schema</span>
-              <span>Agent 长期记忆</span>
-            </div>
-          </a>
-        </div>
+          <div class="project-body">
+            <h3>剪艾 <span class="title-sub">JianAI</span></h3>
+            <p>AI 对话式视频剪辑桌面产品，将自然语言指令转成可执行的时间线编辑操作。</p>
+            <ul class="project-points"><li>按自然语言理解并执行剪辑指令</li><li>结构化时间线状态与原子操作</li><li>桌面端独立应用开发实践</li></ul>
+            <div class="project-bottom"><span class="stack-label">技术栈</span><span>TypeScript · Electron · Vite</span></div>
+            <a class="project-more" href="https://github.com/luoluoluo22/JianAI" target="_blank" rel="noopener noreferrer">查看源代码 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- 核心代表项目（重点突出燕子 AI OS 与剪艾 JianAI） -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-tag">FLAGSHIP ARCHITECTURE & PRODUCTS</span>
-            <h2 class="section-title">核心代表作与系统架构</h2>
-          </div>
-          <div class="filter-controls" id="projectFilters">
-            <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="ai-os">AI 操作系统</button>
-            <button class="filter-btn" data-filter="agent">AI 智能体</button>
-            <button class="filter-btn" data-filter="infra">基础设施/网关</button>
-          </div>
-        </div>
+    <section class="container section-pad results-section" aria-labelledby="results-title">
+      <div class="section-heading"><div><h2 id="results-title">关键成果</h2><p>有作品、有链接，也有真实的业务使用场景。</p></div></div>
+      <div class="results-grid">
+        <a class="result-item" href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" rel="noopener noreferrer"><span class="result-number">3,914+</span><span class="result-unit">Stars</span><span class="result-caption">剪映自动化 GitHub 开源项目</span></a>
+        <a class="result-item" href="https://space.bilibili.com/324272433" target="_blank" rel="noopener noreferrer"><span class="result-number">36.6万+</span><span class="result-unit">播放</span><span class="result-caption">B站 AI 应用实践视频历史数据</span></a>
+        <div class="result-item"><span class="result-number result-word">企业落地</span><span class="result-caption">AI 剪辑系统部署与技术顾问服务</span></div>
+        <div class="result-item"><span class="result-number">5年</span><span class="result-unit">设计经历</span><span class="result-caption">产品表达与工程实践复合背景</span></div>
+      </div>
+      <p class="metrics-note">说明：开源 Star 与视频播放量来自截至 2026 年 10 月的历史记录，实时数据以链接对应平台为准。</p>
+    </section>
 
-        <div class="projects-grid">
-          <!-- 项目 1: 燕子 AI 操作系统 -->
-          <article class="project-card" data-category="ai-os">
-            <div class="project-media" onclick="openLightbox('assets/yanzi-overview.png', '燕子 AI 操作系统：能力网络与调度界面')">
-              <img src="assets/yanzi-overview.png" alt="燕子 AI 操作系统" loading="lazy">
-              <span class="media-zoom-hint mono">EXPAND VIEW</span>
-              <span class="project-badge highlight">AI OS · 核心架构</span>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="tag-pill">AI 操作系统 (AI OS)</span>
-                <span class="tag-pill">Capability Network</span>
-                <span class="tag-pill">C# / .NET 9</span>
-                <span class="tag-pill">软件著作权认证</span>
-              </div>
-              <h3 class="project-title">燕子 (Yanzi / OpenQuickHost) · AI 桌面操作系统</h3>
-              <p class="project-summary">
-                专为 AI 智能体打造的本地宿主系统。打破沙箱限制，赋能大模型直接感知与调度物理桌面。
-              </p>
-              <ul class="project-highlights">
-                <li><strong>能力自发现 (Capability Network)</strong>：AI 自主查询宿主功能，动态理解参数 Schema 契约。</li>
-                <li><strong>跨程序编排调度</strong>：基于 Invocation 协议组合调度窗口、剪贴板与外部进程，全程有界审计。</li>
-                <li><strong>底层低延迟架构</strong>：基于 .NET 9 与 Win32 全局挂钩，获国家计算机软件著作权登记认证。</li>
-              </ul>
-              <div class="project-links">
-                <button class="btn btn-sm btn-primary" onclick="openLightbox('assets/yanzi-desktop.png', '燕子在桌面环境下的实机运行视图')">
-                  查看桌面实装
-                </button>
-                <a href="assets/software-copyright.pdf" target="_blank" class="btn btn-sm btn-outline mono">
-                  软著证书验证
-                </a>
-              </div>
-            </div>
-          </article>
+    <section class="container section-pad lower-section" id="experience">
+      <div class="experience-panel" aria-labelledby="experience-title">
+        <div class="section-heading"><div><h2 id="experience-title">工作经历</h2><p>从商业设计到 AI 产品开发与实际交付。</p></div></div>
+        <ol class="experience-timeline">
+          <li><time>2024.11—至今</time><div><h3>AI 应用开发与咨询（自由职业 / 创业）</h3><p>AI 应用开发、桌面 Agent 和视频剪辑自动化；独立开发剪映 Skill、燕子与剪艾，并参与企业交付。</p></div></li>
+          <li><time>2021.03—2024.11</time><div><h3>四川慧实通达集团有限公司 <span>· 设计主管</span></h3><p>负责活动主视觉、展会 VI、3D 展会效果图及大型活动视觉落地。</p></div></li>
+          <li><time>2020.04—2021.02</time><div><h3>四川云云车科技有限公司 <span>· 平面设计师</span></h3><p>负责汽车后市场产品线上 UI、活动宣传和线下品牌设计。</p></div></li>
+          <li><time>2019.07—2020.02</time><div><h3>四川科库科技有限公司 <span>· 产品经理 / 平面设计</span></h3><p>参与农资 ERP 产品界面与视觉设计、用户调研及活动策划。</p></div></li>
+        </ol>
+      </div>
 
-          <!-- 项目 2: 剪艾 JianAI (桌面智能体) -->
-          <article class="project-card" id="project-jianai" data-category="agent">
-            <div class="project-media" onclick="openLightbox('assets/jianai-editor.png', '剪艾 JianAI：面向桌面端的 AI 对话式剪辑系统')">
-              <img src="assets/jianai-editor.png" alt="剪艾 JianAI 桌面编辑器" loading="lazy">
-              <span class="media-zoom-hint mono">EXPAND VIEW</span>
-              <span class="project-badge highlight">JianAI · 桌面 Agent</span>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="tag-pill">Timeline Agent</span>
-                <span class="tag-pill">Electron + Vite</span>
-                <span class="tag-pill">对话式时间线操作</span>
-                <span class="tag-pill">免配置独立运行</span>
-              </div>
-              <h3 class="project-title">剪艾 (JianAI) · AI 对话式桌面剪辑系统</h3>
-              <p class="project-summary">
-                拒绝黑盒文生视频，首创通过自然语言直接操控桌面时间线。具备免环境配置的独立桌面端体验。
-              </p>
-              <ul class="project-highlights">
-                <li><strong>时间线状态机调度</strong>：Timeline Agent 读取时间线状态，将自然语言精准转化为原子操作。</li>
-                <li><strong>独立开箱即用</strong>：基于 TypeScript + Electron + Vite 构建，无需安装 Python 环境即开即用。</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://github.com/luoluoluo22/JianAI" target="_blank" class="btn btn-sm btn-primary mono">
-                  <svg class="brand-svg-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                  </svg>
-                  GitHub 仓库 (JianAI)
-                </a>
-                <button class="btn btn-sm btn-outline" onclick="openLightbox('assets/jianai-timeline.png', '剪艾 JianAI 时间线空隙与片段智能编排')">
-                  查看时间线算法细节
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 项目 3: 剪映 Skill 全自动剪辑流水线 -->
-          <article class="project-card" data-category="agent">
-            <div class="project-media" onclick="openLightbox('assets/bilibili-showcase.png', '剪映全自动剪辑 Skill 与剪艾 Agent 实战演示')">
-              <img src="assets/bilibili-showcase.png" alt="剪映全自动剪辑" loading="lazy">
-              <span class="media-zoom-hint mono">EXPAND VIEW</span>
-              <span class="project-badge">3914+ Stars · 12W+ 播放</span>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="tag-pill">Agentic Workflow</span>
-                <span class="tag-pill">剪映协议逆向</span>
-                <span class="tag-pill">Python / MCP</span>
-                <span class="tag-pill">企业级落地</span>
-              </div>
-              <h3 class="project-title">剪映全自动剪辑 Skill (jianying-editor-skill)</h3>
-              <p class="project-summary">
-                全网首创将 AI 智能体接入剪映原生底层工作流。Agent 自主完成切片识别、运镜推进、音画对齐与排版压制。
-              </p>
-              <ul class="project-highlights">
-                <li><strong>3,914+ Stars 顶流开源</strong>：B站实战视频播放超 120,000+，全网知名的视频剪辑 Agent 工具库。</li>
-                <li><strong>80%+ 商业提效闭环</strong>：为北京傲福瑞等商业团队交付私有化系统，大幅压缩生产工时。</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://www.bilibili.com/video/BV1hLzCBzEDS" target="_blank" class="btn btn-sm btn-primary">
-                  <svg class="brand-svg-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
-                    <path d="M17.813 4.653h.854c1.51 0 2.733 1.224 2.733 2.733v9.845a2.734 2.734 0 01-2.733 2.733H5.333A2.734 2.734 0 012.6 17.231V7.386a2.734 2.734 0 012.733-2.733h.854l-1.39-1.39a.75.75 0 111.061-1.061l2.571 2.571h6.742l2.571-2.571a.75.75 0 111.061 1.061l-1.39 1.39zM5.333 6.153a1.233 1.233 0 00-1.233 1.233v9.845a1.233 1.233 0 001.233 1.233h13.334a1.233 1.233 0 001.233-1.233V7.386a1.233 1.233 0 00-1.233-1.233H5.333zM7.5 10.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm9 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
-                  </svg>
-                  观看 12万 播放原视频
-                </a>
-                <a href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" class="btn btn-sm btn-outline mono">
-                  <svg class="brand-svg-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                  </svg>
-                  GitHub 源码 (3914★)
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 项目 4: 模型中间件与网关反代 -->
-          <article class="project-card" data-category="infra">
-            <div class="project-media" onclick="openLightbox('assets/yanzi-settings.png', '统一 API 设置与多端服务集成')">
-              <img src="assets/yanzi-settings.png" alt="API 与多端配置" loading="lazy">
-              <span class="media-zoom-hint mono">EXPAND VIEW</span>
-              <span class="project-badge">推理网关中间件</span>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="tag-pill">FastAPI</span>
-                <span class="tag-pill">DeepSeek / Gemini / Grok</span>
-                <span class="tag-pill">OpenAI 兼容协议</span>
-                <span class="tag-pill">Session 自动化</span>
-              </div>
-              <h3 class="project-title">大模型协议转换网关与自动化管道</h3>
-              <p class="project-summary">
-                为本地 Agent 打造自给自足的模型推理基础设施。将 DeepSeek、Gemini 封装为高兼容的标准 OpenAI 接口。
-              </p>
-              <ul class="project-highlights">
-                <li><strong>多端自由调度</strong>：无缝接入 ChatBox、NextChat 以及本地 Quicker / 燕子动作流。</li>
-                <li><strong>会话自动保活</strong>：内置错误重试与多 Token 轮询，保障智能体推理不发生中断。</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://www.bilibili.com/video/BV16UPfzbENf" target="_blank" class="btn btn-sm btn-outline">
-                  <svg class="brand-svg-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
-                    <path d="M17.813 4.653h.854c1.51 0 2.733 1.224 2.733 2.733v9.845a2.734 2.734 0 01-2.733 2.733H5.333A2.734 2.734 0 012.6 17.231V7.386a2.734 2.734 0 012.733-2.733h.854l-1.39-1.39a.75.75 0 111.061-1.061l2.571 2.571h6.742l2.571-2.571a.75.75 0 111.061 1.061l-1.39 1.39zM5.333 6.153a1.233 1.233 0 00-1.233 1.233v9.845a1.233 1.233 0 001.233 1.233h13.334a1.233 1.233 0 001.233-1.233V7.386a1.233 1.233 0 00-1.233-1.233H5.333zM7.5 10.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm9 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
-                  </svg>
-                  查看 B站 实战视频 (2.2W播放)
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
+      <div class="skills-panel" aria-labelledby="skills-title">
+        <div class="section-heading"><div><h2 id="skills-title">技能栈</h2><p>围绕可交付的产品与自动化工作流。</p></div><span class="section-en">TOOLS & SKILLS</span></div>
+        <div class="skill-group"><h3>编程语言</h3><div class="skill-tags"><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>C#</span></div></div>
+        <div class="skill-group"><h3>Agent 与应用</h3><div class="skill-tags"><span>MCP</span><span>Tool Calling</span><span>Prompt</span><span>Electron</span><span>.NET</span></div></div>
+        <div class="skill-group"><h3>桌面及媒体</h3><div class="skill-tags"><span>Win32</span><span>剪映自动化</span><span>视频工作流</span><span>FFmpeg</span></div></div>
+        <div class="skill-group"><h3>设计与工具</h3><div class="skill-tags"><span>Photoshop</span><span>UI / UX</span><span>Git</span><span>产品设计</span></div></div>
+        <div class="education-card"><div class="education-icon" aria-hidden="true">✦</div><div><strong>成都理工大学</strong><p>电子商务 · 本科 · 2013—2017</p></div></div>
       </div>
     </section>
 
-    <!-- Quicker 动作生态专栏（前 5 个高频动作） -->
-    <section id="quicker-showcase" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">DESKTOP RPA & QUICKER ECOSYSTEM</span>
-          <h2 class="section-title">Quicker 桌面效率与自动化动作生态</h2>
-          <p class="section-desc">
-            基于 Win32 底层、WebView2 与 C# 构建的轻量级自动化与大模型中继工具流。由我（Quicker 开发者：洛洛罗）独立开发并开源分享，精选前 5 款核心生产力动作。
-          </p>
-        </div>
-
-        <div class="quicker-grid">
-          <!-- 动作 1: DeepSeek网页转API -->
-          <div class="quicker-card featured">
-            <div>
-              <div class="quicker-header">
-                <div>
-                  <h3 class="quicker-title">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#38bdf8" style="vertical-align:-2px; margin-right:6px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z"/></svg>
-                    DeepSeek网页转API (deepseekRelay)
-                  </h3>
-                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 基础设施</span>
-                </div>
-                <span class="quicker-tag">大模型反代中继</span>
-              </div>
-              <p class="quicker-desc">
-                利用 WebView2 构建隐式浏览器通道，将 DeepSeek 网页端转化为标准 OpenAI 兼容接口。完整支持 DeepSeek-R1 思考过程（Reasoning）流式输出。
-              </p>
-              <ul class="quicker-features">
-                <li>WebView2 隐式容器，免代理配置</li>
-                <li>兼容 OpenAI 协议，支持第三方客户端</li>
-                <li>完整输出 R1 思考推理流</li>
-              </ul>
-            </div>
-            <a href="https://getquicker.net/Sharedaction?code=1ee89389-2e3e-4a77-c23f-08de3147f78a" target="_blank" class="quicker-action-link">
-              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
-            </a>
-          </div>
-
-          <!-- 动作 2: Gemini网页转API -->
-          <div class="quicker-card featured">
-            <div>
-              <div class="quicker-header">
-                <div>
-                  <h3 class="quicker-title">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24" style="vertical-align:-2px; margin-right:6px;"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                    Gemini网页转API (geminiRelay)
-                  </h3>
-                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 基础设施</span>
-                </div>
-                <span class="quicker-tag">多模态与长上下文</span>
-              </div>
-              <p class="quicker-desc">
-                将 Google Gemini 网页端封装为本地标准 API 自动化管道。打通百万长上下文能力，内置会话自动保活与重试。
-              </p>
-              <ul class="quicker-features">
-                <li>零成本调用百万级上下文</li>
-                <li>多 Token 会话弹性轮询</li>
-                <li>原生 Markdown 流式解析</li>
-              </ul>
-            </div>
-            <a href="https://getquicker.net/Sharedaction?code=54037596-7003-47cb-dca5-08de3bb54158" target="_blank" class="quicker-action-link">
-              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
-            </a>
-          </div>
-
-          <!-- 动作 3: 中键轮盘 -->
-          <div class="quicker-card">
-            <div>
-              <div class="quicker-header">
-                <div>
-                  <h3 class="quicker-title">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#34d399" style="vertical-align:-2px; margin-right:6px;"><path d="M13 1.07V9h7c-.47-4.09-3.91-7.53-8-7.93zM4 13c0 4.42 3.58 8 8 8s8-3.58 8-8h-8V4c-4.42 0-8 3.58-8 8z"/></svg>
-                    中键轮盘 (高敏桌面手势)
-                  </h3>
-                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 人机交互</span>
-                </div>
-                <span class="quicker-tag">创作者效率神器</span>
-              </div>
-              <p class="quicker-desc">
-                专为设计与编程打造的鼠标中键多维扇形交互轮盘。基于 Win32 底层全局挂钩，毫秒级自适应呼出多级快捷动作。
-              </p>
-              <ul class="quicker-features">
-                <li>Win32 底层低延迟全局挂钩</li>
-                <li>扇形多级嵌套自定义动作链</li>
-                <li>窗口上下文智能自动感知</li>
-              </ul>
-            </div>
-            <a href="https://getquicker.net/Sharedaction?code=4e56a529-7213-4b2b-f931-08de3ca88ddf" target="_blank" class="quicker-action-link">
-              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
-            </a>
-          </div>
-
-          <!-- 动作 4: QK扳手 -->
-          <div class="quicker-card">
-            <div>
-              <div class="quicker-header">
-                <div>
-                  <h3 class="quicker-title">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b" style="vertical-align:-2px; margin-right:6px;"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
-                    QK扳手 (动作底层诊断维护)
-                  </h3>
-                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 极客工具</span>
-                </div>
-                <span class="quicker-tag">开发者辅助利器</span>
-              </div>
-              <p class="quicker-desc">
-                专为 Quicker 开发者研发的动作逆向与诊断维护工具箱。可视化动作底层 JSON 结构树，快速排查变量断链与性能瓶颈。
-              </p>
-              <ul class="quicker-features">
-                <li>动作底层 JSON 语法树解析</li>
-                <li>运行时参数注入与上下文仿真</li>
-                <li>动作依赖清理与断链自愈</li>
-              </ul>
-            </div>
-            <a href="https://getquicker.net/Sharedaction?code=f10c350a-f5cf-4726-543d-08de40f9c963" target="_blank" class="quicker-action-link">
-              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
-            </a>
-          </div>
-
-          <!-- 动作 5: DeepSeek-AI测试 -->
-          <div class="quicker-card">
-            <div>
-              <div class="quicker-header">
-                <div>
-                  <h3 class="quicker-title">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#60a5fa" style="vertical-align:-2px; margin-right:6px;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 12.5v-1h-2v1H8v-1H7v-2h1v-1H7v-2h1v-1H7V7.5h1v-1h2v1h2v-1h2v1h1V9h-1v2h1v2h-1v2.5h-1v1h-2z"/></svg>
-                    DeepSeek-AI测试 (快速推理验证)
-                  </h3>
-                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">by 洛洛罗 · 提示工程</span>
-                </div>
-                <span class="quicker-tag">即开即测桌面面板</span>
-              </div>
-              <p class="quicker-desc">
-                极速呼出的轻量级桌面 AI 验证面板。秒级压测 Prompt 提示词与 Function Calling 输出，一键复制结构化结果。
-              </p>
-              <ul class="quicker-features">
-                <li>毫秒级呼出免开重型 Web</li>
-                <li>预置 System Prompt 提示词模板</li>
-                <li>一键复制 JSON 响应结构</li>
-              </ul>
-            </div>
-            <a href="https://getquicker.net/Sharedaction?code=21f7b64f-351f-4f5b-c26f-08de3147f78a" target="_blank" class="quicker-action-link">
-              <span>在 Quicker 动作库中查看 / 安装 ↗</span>
-            </a>
-          </div>
-
-          <!-- 引导卡片：查看 Quicker 个人分享中心 -->
-          <div class="quicker-card" style="border-style: dashed; justify-content: center; text-align: center; background-color: rgba(255, 255, 255, 0.01);">
-            <div style="padding: 1rem 0;">
-              <span class="mono" style="font-size: 0.8rem; color: #38bdf8; display: block; margin-bottom: 0.5rem;">QUICKER AUTHOR PROFILE</span>
-              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-pure); margin-bottom: 0.5rem;">更多 Quicker 自研动作</h3>
-              <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-                除以上 5 款高频动作外，还发布有 gemini-AI测试、自动化剪辑脚本等多款工具，欢迎前往分享主页查看。
-              </p>
-              <a href="https://getquicker.net/Member/MyShare" target="_blank" class="btn btn-outline btn-sm mono">
-                访问 Quicker 分享主页 ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI Agent 架构思考 -->
-    <section id="agent-thinking" class="section">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">ENGINEERING PHILOSOPHY</span>
-          <h2 class="section-title">我对 AI Agent 的工程认知与开发思路</h2>
-          <p class="section-desc">从单纯调用 Prompt 到构建可靠的智能体闭环，核心在于将软件工程标准引入非确定性模型。</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <h3>
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="#38bdf8" style="vertical-align:-3px; margin-right:8px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-8a5 5 0 0110 0 5 5 0 01-10 0zm5-2a2 2 0 100 4 2 2 0 000-4z"/></svg>
-                1. 感知层 · 物理环境全维捕获
-              </h3>
-            </div>
-            <p class="stat-desc" style="font-size: 0.88rem; margin-bottom: 1rem; line-height: 1.6;">
-              智能体不能局限于单一纯文本。通过 Win32 全局挂钩、屏幕上下文识别与音视频特征提取，赋予 Agent 全维度的物理环境感知。
-            </p>
-            <div class="repo-footer" style="padding-top: 0.5rem;">
-              <span class="mono">Win32 Hooks · 屏幕上下文 · 音视频波形</span>
-            </div>
-          </div>
-
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <h3>
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="#60a5fa" style="vertical-align:-3px; margin-right:8px;"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-                2. 规划层 · 严格契约化 (Schema-First)
-              </h3>
-            </div>
-            <p class="stat-desc" style="font-size: 0.88rem; margin-bottom: 1rem; line-height: 1.6;">
-              模型推理具有概率随机性，但系统执行必须严格确定。通过严格的 JSON Schema 强类型约束与 Invocation 协议，确保每次工具调度安全可预测。
-            </p>
-            <div class="repo-footer" style="padding-top: 0.5rem;">
-              <span class="mono">JSON Schema · 权限沙箱 · Invocation 契约</span>
-            </div>
-          </div>
-
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <h3>
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="#34d399" style="vertical-align:-3px; margin-right:8px;"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0020 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 004 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
-                3. 执行层 · 物理动作与自愈闭环
-              </h3>
-            </div>
-            <p class="stat-desc" style="font-size: 0.88rem; margin-bottom: 1rem; line-height: 1.6;">
-              真正的智能体必须深入物理桌面完成执行。逆向底层协议、操作进程并在产生故障时自动重试自愈，形成“感知-规划-执行-审计”的完整闭环。
-            </p>
-            <div class="repo-footer" style="padding-top: 0.5rem;">
-              <span class="mono">MCP 端点 · 状态机回传 · 自动重试闭环</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 视觉与 UI/UX 展厅（专业设计背景） -->
-    <section id="design-showcase" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">VISUAL & PRODUCT DESIGN</span>
-          <h2 class="section-title">5 年商业设计底蕴与自研设计系统</h2>
-          <p class="section-desc">既能写底层 Agent 架构，亦能把控高规格视觉设计。拥有 270+ 本地精细设计库与完整的组件规范。</p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-card" onclick="openLightbox('assets/yanzi-typography.png', '燕子现代设计系统：Geist Typography 排版与微组件视觉规范')">
-            <div class="gallery-img-wrapper">
-              <img src="assets/yanzi-typography.png" alt="设计系统排版规范" loading="lazy">
-            </div>
-            <div class="gallery-info">
-              <h4>Geist 设计系统排版规范</h4>
-              <span>暗黑模式 · 字号比率 · 胶囊微组件</span>
-            </div>
-          </div>
-
-          <div class="gallery-card" onclick="openLightbox('assets/yanzi-dialog.png', '交互微状态与弹窗组件设计')">
-            <div class="gallery-img-wrapper">
-              <img src="assets/yanzi-dialog.png" alt="弹窗交互动效" loading="lazy">
-            </div>
-            <div class="gallery-info">
-              <h4>弹窗微动效与毛玻璃质感</h4>
-              <span>微交互 · 动效系统 · 景深层次</span>
-            </div>
-          </div>
-
-          <div class="gallery-card" onclick="openLightbox('assets/jianai-editor.png', '剪艾 JianAI 桌面级视频编辑器界面与 Agent 面板')">
-            <div class="gallery-img-wrapper">
-              <img src="assets/jianai-editor.png" alt="剪艾 JianAI 编辑器界面" loading="lazy">
-            </div>
-            <div class="gallery-info">
-              <h4>剪艾 JianAI 桌面编辑器</h4>
-              <span>AI 原生交互 · 时间线控制台</span>
-            </div>
-          </div>
-
-          <div class="gallery-card" onclick="openLightbox('assets/yanzi-desktop.png', '燕子效率软件在真实桌面环境下的极简融入')">
-            <div class="gallery-img-wrapper">
-              <img src="assets/yanzi-desktop.png" alt="真实桌面环境" loading="lazy">
-            </div>
-            <div class="gallery-info">
-              <h4>真实桌面环境无感融合</h4>
-              <span>Windows 原生体验 · 高质感融入</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="design-history-box">
-          <div class="history-item">
-            <div class="history-role">大型会展 · 主视觉与空间体系</div>
-            <div class="history-desc">主导大型会务活动主视觉 KV、3D 展位空间效果图设计，建立全套工程级标准 VI 与现场物料落地规范。</div>
-          </div>
-          <div class="history-item">
-            <div class="history-role">云车宝 APP · 移动产品设计</div>
-            <div class="history-desc">负责 1500 家签约商户汽车后市场移动应用的线上 UI、高转化营销 H5 及全套品牌形象把控。</div>
-          </div>
-          <div class="history-item">
-            <div class="history-role">优农帮 · 互联网农资 ERP</div>
-            <div class="history-desc">独立负责覆盖 3 万用户的 ERP 平台 Web 端产品设计与用户体验调研，实现设计与业务深度统一。</div>
-          </div>
-        </div>
-
-        <!-- 站酷 (ZCOOL) 官方推荐 / 商业视觉作品集专栏 -->
-        <div class="zcool-showcase-card">
-          <div class="zcool-header">
-            <div class="zcool-brand">
-              <span class="zcool-badge">ZCOOL · 站酷创作者认证</span>
-              <h3 class="zcool-title">站酷设计作品集：平面设计师罗名扬</h3>
-              <p class="zcool-desc">
-                完整收录 5 年商业视觉设计生涯的代表案例：涵盖大型政企 3D 展位空间效果图、C4D Octane 光影渲染、全套标准 VI 与书籍画册设计。
-              </p>
-            </div>
-            <div class="zcool-actions">
-              <a href="https://www.zcool.com.cn/u/ZNTI2NzE0OTY=" target="_blank" class="btn btn-primary zcool-main-btn">
-                <span>浏览站酷主页 ↗</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="zcool-works-grid">
-            <a href="https://www.zcool.com.cn/work/ZNDY0Mjc0NTY=.html" target="_blank" class="zcool-work-item">
-              <div>
-                <span class="work-tag">精选代表作</span>
-                <div class="work-name">《商业综合设计作品集》</div>
-              </div>
-              <span class="work-link-hint mono">查看站酷详情 ↗</span>
-            </a>
-
-            <a href="https://www.zcool.com.cn/work/ZNzA2NzkwOTY=.html" target="_blank" class="zcool-work-item">
-              <div>
-                <span class="work-tag">大型 3D 空间</span>
-                <div class="work-name">生活垃圾分类主题宣传活动现场效果图</div>
-              </div>
-              <span class="work-link-hint mono">3D 展位渲染 ↗</span>
-            </a>
-
-            <a href="https://www.zcool.com.cn/work/ZNzA2NzkwMTI=.html" target="_blank" class="zcool-work-item">
-              <div>
-                <span class="work-tag">大型会务 VI</span>
-                <div class="work-name">活动策划与会务接待保障视觉解决方案</div>
-              </div>
-              <span class="work-link-hint mono">全套工程物料 ↗</span>
-            </a>
-
-            <a href="https://www.zcool.com.cn/work/ZNjQ4NTE1MDg=.html" target="_blank" class="zcool-work-item">
-              <div>
-                <span class="work-tag">C4D + Octane</span>
-                <div class="work-name">树林丁达尔效应渲染与光影空间表现</div>
-              </div>
-              <span class="work-link-hint mono">三维空间材质 ↗</span>
-            </a>
-
-            <a href="https://www.zcool.com.cn/work/ZNzA2Nzg4MDg=.html" target="_blank" class="zcool-work-item">
-              <div>
-                <span class="work-tag">版式与画册</span>
-                <div class="work-name">应急演练宣传手册与全案版式设计</div>
-              </div>
-              <span class="work-link-hint mono">书籍画册排版 ↗</span>
-            </a>
-
-            <a href="https://www.zcool.com.cn/work/ZNzA2NzkxODA=.html" target="_blank" class="zcool-work-item">
-              <div>
-                <span class="work-tag">快消品包装</span>
-                <div class="work-name">青甛瑰玫喷雾 品牌全案包装设计</div>
-              </div>
-              <span class="work-link-hint mono">商品包装视觉 ↗</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 工作履历时间线 -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">CAREER PATH</span>
-          <h2 class="section-title">履历与成长轨迹</h2>
-          <p class="section-desc">深厚设计美学与前沿 AI 技术的完美交融。</p>
-        </div>
-
-        <div class="timeline">
-          <!-- 默认展示最近两年核心经历：AI Agent 独立研发 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-time">2024.11 - 至今</div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3 class="timeline-title">AI 应用开发与独立架构 · 自由职业 / 创业</h3>
-                <span class="timeline-location">成都</span>
-              </div>
-              <p class="timeline-summary">
-                专注于将 AI 技术深度嵌入实际业务场景，重塑企业及创作者的工作流。
-              </p>
-              <ul class="timeline-points">
-                <li>主导研发开源项目 <strong>jianying-editor-skill（3,914+ Stars）</strong>，打造全网知名的剪映自动化智能体基础设施。</li>
-                <li>独立研发桌面端 AI 对话式剪辑系统 <strong>剪艾 JianAI</strong>，实现自然语言驱动时间线状态机。</li>
-                <li>自研面向智能体的桌面操作系统 <strong>燕子 (Yanzi AI OS)</strong>，取得独立计算机软件著作权认证。</li>
-                <li>为北京傲福瑞等商业团队提供私有化 AI 剪辑系统交付与架构技术顾问服务。</li>
-                <li>以“我老萝卜”身份在 B站 持续输出技术实践，视频总播放突破 <strong>36.6 万+</strong>。</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- 折叠触发栏：默认折叠更早内容 -->
-          <div class="timeline-toggle-bar">
-            <button type="button" class="toggle-exp-btn" id="toggleExpBtn" aria-expanded="false">
-              <span class="btn-text">展开更早的 5 年商业视觉设计与求学经历</span>
-              <svg class="chevron-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-              </svg>
-            </button>
-          </div>
-
-          <!-- 折叠包裹层：更早的经历 -->
-          <div class="timeline-collapse-wrap" id="timelineOlderWrap">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-time">2021.03 - 2024.11</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 class="timeline-title">四川慧实通达集团 · 广告部资深设计师</h3>
-                  <span class="timeline-location">成都</span>
-                </div>
-                <ul class="timeline-points">
-                  <li>主导大型活动视觉 VI 设计（主视觉 KV、3D 展会效果图设计、对接制作公司）。</li>
-                  <li>负责专项活动全套设计标准体系、企业文化专项与大型会务空间落地。</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-time">2020.03 - 2021.02</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 class="timeline-title">云车宝 · UI 设计与创意策划</h3>
-                  <span class="timeline-location">成都</span>
-                </div>
-                <ul class="timeline-points">
-                  <li>负责云车宝 APP（1500+ 签约商户）线上界面 UI、营销 H5、活动主视觉落地。</li>
-                  <li>推进品牌 VI、线下文化墙与全套物料设计规范。</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-time">2019.07 - 2020.02</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 class="timeline-title">优农帮 · 视觉与产品设计</h3>
-                  <span class="timeline-location">成都</span>
-                </div>
-                <ul class="timeline-points">
-                  <li>独立负责农资 ERP 系统（3w 用户）网页端、海报、画册及空间展陈设计。</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-time">2013.09 - 2017.06</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 class="timeline-title">成都理工大学 · 电子商务专业 (本科)</h3>
-                  <span class="timeline-location">成都</span>
-                </div>
-                <p class="timeline-summary">
-                  在校期间担任学生会科技学习部部长，全面涉猎互联网技术、设计思维与商业运营。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 联系方式与面试沟通 -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-content">
-            <span class="section-tag">CONNECT & COLLABORATE</span>
-            <h2 class="section-title">期待与您交流探讨</h2>
-            <p class="section-desc">
-              如果您正在寻找能够独立操盘 AI Agent 架构闭环、具备真实产品落地力、同时兼备顶级设计审美的复合型人才，欢迎随时联系我。支持直接电话致电或查看线上真实项目代码与视频。
-            </p>
-
-            <!-- 强化联系网格：直拨电话 + GitHub 代表作直达 + B站 代表作直达 -->
-            <div class="contact-actions-grid">
-              <!-- 卡片 1: 电话快速直达与直接拨打 -->
-              <div class="contact-card-box highlight-phone">
-                <div>
-                  <div class="card-box-header">
-                    <span class="card-box-title">
-                      <svg class="brand-svg-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                      </svg>
-                      电话直接联系
-                    </span>
-                    <span class="card-box-badge">离职随时沟通</span>
-                  </div>
-                  <p class="card-box-desc">
-                    优先推荐直接电话或短信联系。工作地点意向：成都（本地）、支持远程协作或灵活出差。
-                  </p>
-                </div>
-                <div class="card-box-links">
-                  <a href="tel:18428029750" class="direct-call-btn">
-                    <svg class="brand-svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1.01A11.36 11.36 0 018.57 3.9a1 1 0 00-1-1H4a1 1 0 00-1 1A17 17 0 0020 21a1 1 0 001-1v-3.62a1 1 0 00-.99-1z"/>
-                    </svg>
-                    点击直接拨打电话 (18428029750)
-                  </a>
-                  <button type="button" class="btn btn-outline btn-sm copy-btn mono" data-copy="18428029750">
-                    一键复制号码
-                  </button>
-                </div>
-              </div>
-
-              <!-- 卡片 2: GitHub 开源主页与项目直达 -->
-              <div class="contact-card-box">
-                <div>
-                  <div class="card-box-header">
-                    <span class="card-box-title">
-                      <svg class="brand-svg-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                      </svg>
-                      GitHub 开源生态
-                    </span>
-                    <span class="card-box-badge badge-gray">3,900+ Stars 作者</span>
-                  </div>
-                  <p class="card-box-desc">
-                    查看我公开维护的 AI 剪辑自动化架构、JianAI 桌面 Agent 与 MCP 基础设施源码。
-                  </p>
-                </div>
-                <div class="card-box-links">
-                  <a href="https://github.com/luoluoluo22" target="_blank" class="btn btn-secondary btn-sm mono">
-                    主页 @luoluoluo22
-                  </a>
-                  <a href="https://github.com/luoluoluo22/jianying-editor-skill" target="_blank" class="btn btn-outline btn-sm mono">
-                    剪映自动化 (3914★)
-                  </a>
-                  <a href="https://github.com/luoluoluo22/JianAI" target="_blank" class="btn btn-outline btn-sm mono">
-                    JianAI 桌面端
-                  </a>
-                </div>
-              </div>
-
-              <!-- 卡片 3: B站 技术视频与作品演示直达 -->
-              <div class="contact-card-box">
-                <div>
-                  <div class="card-box-header">
-                    <span class="card-box-title">
-                      <svg class="brand-svg-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                        <path d="M17.813 4.653h.854c1.51 0 2.733 1.224 2.733 2.733v9.845a2.734 2.734 0 01-2.733 2.733H5.333A2.734 2.734 0 012.6 17.231V7.386a2.734 2.734 0 012.733-2.733h.854l-1.39-1.39a.75.75 0 111.061-1.061l2.571 2.571h6.742l2.571-2.571a.75.75 0 111.061 1.061l-1.39 1.39zM5.333 6.153a1.233 1.233 0 00-1.233 1.233v9.845a1.233 1.233 0 001.233 1.233h13.334a1.233 1.233 0 001.233-1.233V7.386a1.233 1.233 0 00-1.233-1.233H5.333zM7.5 10.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm9 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
-                      </svg>
-                      B站 技术视频与作品
-                    </span>
-                    <span class="card-box-badge badge-bili">全网 36.6W+ 播放</span>
-                  </div>
-                  <p class="card-box-desc">
-                    通过真实视频观看 Agent 实际运行效果与讲解，涵盖剪辑智能体、模型中间件网关与桌面操作实录。
-                  </p>
-                </div>
-                <div class="card-box-links">
-                  <a href="https://space.bilibili.com/324272433" target="_blank" class="btn btn-secondary btn-sm">
-                    B站主页：我老萝卜
-                  </a>
-                  <a href="https://www.bilibili.com/video/BV1hLzCBzEDS" target="_blank" class="btn btn-outline btn-sm">
-                    12W播放：全自动剪辑
-                  </a>
-                  <a href="https://www.bilibili.com/video/BV16UPfzbENf" target="_blank" class="btn btn-outline btn-sm">
-                    2.2W播放：模型网关
-                  </a>
-                </div>
-              </div>
-
-              <!-- 卡片 4: 站酷 (ZCOOL) 商业设计与 3D 作品集 -->
-              <div class="contact-card-box">
-                <div>
-                  <div class="card-box-header">
-                    <span class="card-box-title">
-                      <svg class="brand-svg-icon" viewBox="0 0 24 24" width="20" height="20" fill="#fbbf24">
-                        <path d="M3 4h18v16H3V4zm2 2v12h14V6H5zm2 2h10v2.5l-6 5.5h6V16H7v-2.5l6-5.5H7V8z"/>
-                      </svg>
-                      站酷商业设计作品集
-                    </span>
-                    <span class="card-box-badge badge-zcool">站酷认证创作者</span>
-                  </div>
-                  <p class="card-box-desc">
-                    收录 5 年大型政企 3D 展位效果图、C4D Octane 光影空间、应急演练 VI 与商业包装实案。
-                  </p>
-                </div>
-                <div class="card-box-links">
-                  <a href="https://www.zcool.com.cn/u/ZNTI2NzE0OTY=" target="_blank" class="btn btn-secondary btn-sm">
-                    站酷主页 @罗名扬
-                  </a>
-                  <a href="https://www.zcool.com.cn/work/ZNDY0Mjc0NTY=.html" target="_blank" class="btn btn-outline btn-sm">
-                    综合作品集
-                  </a>
-                  <a href="https://www.zcool.com.cn/work/ZNzA2NzkwOTY=.html" target="_blank" class="btn btn-outline btn-sm">
-                    3D 展位效果图
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 底部通栏：商务邮箱直通与最新 PDF 简历下载 -->
-            <div style="margin-top: 1.25rem; padding: 1.25rem 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
-              <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <svg class="brand-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-                <span class="mono" style="font-size: 0.88rem; color: var(--text-main);">官方沟通邮箱: <strong>luomingyang_design@163.com</strong></span>
-              </div>
-              <div style="display: flex; gap: 0.75rem; align-items: center;">
-                <button type="button" class="btn btn-secondary btn-sm copy-btn mono" data-copy="luomingyang_design@163.com">
-                  复制邮箱
-                </button>
-                <a href="assets/resume.pdf" download="罗名扬_AI_Agent开发工程师_简历.pdf" class="btn btn-primary btn-sm">
-                  下载最新 PDF 简历
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div><span class="contact-kicker">LET'S TALK</span><h2>让 AI 真正进入工作流程。</h2><p>关注 AI Agent 应用开发、企业自动化与数字化转型岗位。成都，可沟通其他城市机会。</p></div>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:luomingyang_design@163.com">邮件联系我 <span aria-hidden="true">↗</span></a><a class="button button-outline" href="tel:18428029750">拨打电话</a><a class="button button-quiet" href="assets/resume.pdf" download="罗名扬_AI_Agent开发工程师_简历.pdf">下载简历 PDF ↓</a></div>
       </div>
     </section>
   </main>
-
-  <!-- 页脚 -->
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <p class="footer-copy">© 2026 罗名扬 · Mingyang Luo. AI Agent Architecture × AI OS Host × Design System</p>
-      <div class="footer-links mono">
-        <a href="https://github.com/luoluoluo22/portfolio" target="_blank">SOURCE CODE</a>
-        <a href="assets/resume.pdf" target="_blank">RESUME PDF</a>
-        <a href="#hero">TOP</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Lightbox 模态框 -->
-  <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
-    <div class="lightbox-content">
-      <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="关闭">&times;</button>
-      <img id="lightboxImg" src="" alt="预览大图">
-      <p id="lightboxCaption" class="lightbox-caption"></p>
-    </div>
-  </div>
-
-  <!-- Toast 通知 -->
-  <div id="toast" class="toast-notification mono"></div>
-
-  <script src="app.js"></script>
+  <footer class="footer"><div class="container footer-inner"><span>© 2026 罗名扬 · AI Agent Developer</span><span><a href="https://github.com/luoluoluo22" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://space.bilibili.com/324272433" target="_blank" rel="noopener noreferrer">B站</a><a href="#top">返回顶部 ↑</a></span></div></footer>
 </body>
 </html>
