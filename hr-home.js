@@ -22,6 +22,7 @@
   const targets = [
     { selector: '#top', hash: '#top' },
     { selector: '#projects', hash: '#projects' },
+    { selector: '#media', hash: '#media' },
     { selector: '#experience', hash: '#experience' },
     { selector: '#contact', hash: '#contact' }
   ];

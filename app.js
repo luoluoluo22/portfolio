@@ -222,7 +222,7 @@ function initTimelineToggle() {
       toggleBtn.classList.remove('is-open');
       toggleBtn.setAttribute('aria-expanded', 'false');
       const textSpan = toggleBtn.querySelector('.btn-text');
-      if (textSpan) textSpan.textContent = '展开更早的 5 年商业视觉设计与求学经历';
+      if (textSpan) textSpan.textContent = '展开更早的企业产品与求学经历';
     } else {
       collapseWrap.classList.add('is-open');
       toggleBtn.classList.add('is-open');
