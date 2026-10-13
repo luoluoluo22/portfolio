@@ -3,6 +3,9 @@ import base64
 import re
 import mimetypes
 from pathlib import Path
+from build_mobile_screenshot import build_mobile_screenshot
+
+build_mobile_screenshot()
 
 base_dir = str(Path(__file__).resolve().parent)
 index_html = os.path.join(base_dir, "index.html")

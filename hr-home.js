@@ -1,5 +1,22 @@
 // Homepage-only interactions. Keep all meaningful content usable without JavaScript.
 (() => {
+  // Keep the PDF link usable without JavaScript; add the mobile image download.
+  document.querySelectorAll('a[download][href$="resume.pdf"], a[download][href^="data:application/pdf"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const screenshot = document.getElementById('mobileScreenshotDownload');
+      if (!screenshot) return;
+      const download = document.createElement('a');
+      download.href = screenshot.href;
+      download.download = screenshot.download;
+      download.hidden = true;
+      document.body.appendChild(download);
+      setTimeout(() => {
+        download.click();
+        download.remove();
+      }, 250);
+    });
+  });
+
   const menuButton = document.querySelector('.menu-button');
   const mobileNav = document.getElementById('mobileNav');
   if (menuButton && mobileNav) {
